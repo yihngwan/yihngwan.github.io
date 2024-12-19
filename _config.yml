@@ -14,3 +14,8 @@ nav_links:
   - title: "旧的作品"
     url: "https://yihngwan.github.io/study_html/"
 
+auto_pages:
+  enabled: true
+  title: "自动生成的页面"
+  dir: "/pages"
+

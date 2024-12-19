@@ -61,11 +61,19 @@
       {% for link in site.nav_links %}
         <li><a href="{{ link.url }}" class="{% if page.url == link.url %}active{% endif %}">{{ link.title }}</a></li>
       {% endfor %}
-      {% if site.auto_pages.enabled %}
-        <li><a href="/pages" class="{% if page.url == '/pages' %}active{% endif %}">{{ site.auto_pages.title }}</a></li>
-      {% endif %}
     </ul>
   </nav>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>{{ site.auto_pages.title }}</h2>
+      <ul>
+        {% for page in site.pages %}
+          {% if page.dir == site.auto_pages.dir %}
+            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </aside>
     <main class="content">
       {{ content }}
     </main>
