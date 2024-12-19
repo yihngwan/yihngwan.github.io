@@ -14,13 +14,17 @@
       background-color: #333;
       color: #fff;
       padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     nav ul {
       list-style: none;
       padding: 0;
+      margin: 0;
+      display: flex;
     }
     nav ul li {
-      display: inline;
       margin-right: 1em;
     }
     nav ul li a {
@@ -36,26 +40,21 @@
       background-color: #007bff;
       font-weight: bold;
     }
+    .nav-info {
+      color: #fff;
+    }
     .container {
       display: flex;
-    }
-    .sidebar {
-      width: 200px;
-      padding: 2em;
-      background-color: #fff;
-      margin: 2em;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 1200px;
+      margin: 0 auto;
     }
     .content {
       flex: 1;
       padding: 2em;
       background-color: #fff;
-      margin: 2em auto;
-      max-width: 800px;
+      margin: 2em 1em;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-
-    
   </style>
 </head>
 <body>
@@ -65,11 +64,11 @@
         <li><a href="{{ link.url }}" class="{% if page.url == link.url %}active{% endif %}">{{ link.title }}</a></li>
       {% endfor %}
     </ul>
+    <div class="nav-info">
+      {{ site.author.name }} | <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+    </div>
   </nav>
   <div class="container">
-    <aside class="sidebar">
-      {{ toc }}
-    </aside>
     <main class="content">
       {{ content }}
     </main>
