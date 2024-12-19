@@ -4,4 +4,4 @@ nav_links:
   - title: "Home"
     url: "index.md"
   - title: "About"
-    url: "_posts\about.md"
+    url: "_posts/about.md"

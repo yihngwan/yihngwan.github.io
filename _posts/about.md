@@ -1,5 +1,3 @@
-# Welcome to My Blog  
-This is my first blog post.  
 - **我的目标**: 
 -  [ ] 学习口风琴
 -  [ ] 建立一个是属于自己的博客
