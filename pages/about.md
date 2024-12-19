@@ -1,6 +1,7 @@
 ---
 layout: default
 title: about
+toc: true
 ---
 
 # **我的目标**: 

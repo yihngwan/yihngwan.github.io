@@ -14,8 +14,22 @@ nav_links:
   - title: "旧的作品"
     url: "https://yihngwan.github.io/study_html/"
 
+plugins:
+  - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-archives
+  - jekyll-toc
+  - jekyll-auto-pages
+
 auto_pages:
   enabled: true
-  title: "自动生成的页面"
-  dir: "/pages"
-
+  layouts:
+    - 'auto_page'
+  categories:
+    enabled: true
+  collections:
+    enabled: true
+  tags:
+    enabled: true
