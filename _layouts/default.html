@@ -30,12 +30,7 @@
     .container {
       display: flex;
     }
-    .sidebar {
-      width: 200px;
-      background-color: #f4f4f4;
-      padding: 1em;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+
     .content {
       flex: 1;
       padding: 2em;
@@ -55,16 +50,6 @@
     </ul>
   </nav>
   <div class="container">
-    <aside class="sidebar">
-      <h2>{{ site.auto_pages.title }}</h2>
-      <ul>
-        {% for page in site.pages %}
-          {% if page.dir == site.auto_pages.dir %}
-            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </aside>
     <main class="content">
       {{ content }}
     </main>
