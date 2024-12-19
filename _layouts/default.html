@@ -1,0 +1,19 @@
+<!-- _layouts/default.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ site.title }}</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      {% for link in site.nav_links %}
+        <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <main>
+    {{ content }}
+  </main>
+</body>
+</html>
