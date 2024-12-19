@@ -5,4 +5,4 @@ This is my first blog post.
 
 
 
-[about]: ../_posts/about.md
+[about]: about.md

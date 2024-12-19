@@ -1,2 +1,7 @@
 heme: jekyll-theme-minimal
 title: 何贤君的githubBlog
+nav_links:
+  - title: "Home"
+    url: "index.md"
+  - title: "About"
+    url: "_posts\about.md"
