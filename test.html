@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .header {
+            background-color: #4254c5;
+            color: white;
+            padding: 10px;
+            height: 40px;
+            display: flex ;
+            align-items: center;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+        
+        .nav a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+        }
+        
+        .container {
+            display: flex;
+            height: calc(100vh - 60px);
+        }
+        
+        .sidebar {
+            width: 200px;
+            background-color: #f0f0f0;
+            border-right: 1px solid #ccc;
+        }
+        
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .content {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+        }
+        
+        .content-lines {
+            color: #ccc;
+            line-height: 2;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Support</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <a href="#">h2</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </div>
+        <h1>Loader</h1>
+        <div class="content">
+            <p>加载中...</p>
+
+        </div>
+    </div>
+</body>
+</html>

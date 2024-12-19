@@ -7,6 +7,8 @@ nav_links:
     url: "https://yihngwan.github.io/"
   - title: "新的页面"
     url: "/pages/new_page"
+  - title: "test"
+    url: "test.html"
   - title: "About"
     url: "/pages/about"
   - title: "旧的作品"
