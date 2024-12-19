@@ -2,7 +2,7 @@ theme: jekyll-theme-minimal
 title: 何贤君的githubBlog
 nav_links:
   - title: "home"
-    url: "yihngwan.github.io"
+    url: "index"
   - title: "新的页面"
     url: "/pages/new_page"
   - title: "About"
