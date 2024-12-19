@@ -1,6 +1,7 @@
 ---
-layout: default
-title: About
+layout: page
+title: about
+permalink: https://yihngwan.github.io/
 ---
 
 # **我的目标**: 
