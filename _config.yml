@@ -1,7 +1,18 @@
+title: 何贤君的Blog
+description: 这是我的个人博客
+url: "https://yihngwan.github.io"
+baseurl: ""
+author:
+  name: "何贤君"
+  email: "yihngwan@outlook.com"
+timezone: "Asia/Shanghai"
+locale: "zh-CN"
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:year/:month/:day/:title/
+paginate: 5
 theme: jekyll-theme-minimal
-title: 何贤君的githubBlog
 # Navigation links for the blog
-# Each link should have a title and a URL
 nav_links:
   - title: "home"
     url: "https://yihngwan.github.io/"
@@ -13,23 +24,6 @@ nav_links:
     url: "/pages/about"
   - title: "旧的作品"
     url: "https://yihngwan.github.io/study_html/"
-
 plugins:
-  - jekyll-include-cache
-  - jekyll-sitemap
   - jekyll-feed
-  - jekyll-paginate
-  - jekyll-archives
-  - jekyll-toc
-  - jekyll-auto-pages
-
-auto_pages:
-  enabled: true
-  layouts:
-    - 'auto_page'
-  categories:
-    enabled: true
-  collections:
-    enabled: true
-  tags:
-    enabled: true
+  - jekyll-seo-tag
