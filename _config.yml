@@ -1,7 +1,7 @@
-heme: jekyll-theme-minimal
+theme: jekyll-theme-minimal
 title: 何贤君的githubBlog
 nav_links:
-  - title: "Home"
-    url: "index.md"
-  - title: "About"
-    url: "_posts/about.md"
+  - title: "旧的作品"
+    url: "https://yihngwan.github.io/study_html/"
+  - title: "新的页面"
+    url: "/pages/new_page"
