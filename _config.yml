@@ -24,14 +24,10 @@ plugins:
 auto_pages:
   enabled: true
   layouts:
-    - 'default'
+    - 'auto_page'
   categories:
     enabled: true
   collections:
     enabled: true
   tags:
     enabled: true
-  pages:
-    enabled: true
-    title: "Pages"
-    dir: "pages"
