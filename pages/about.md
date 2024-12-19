@@ -1,6 +1,7 @@
 ---
 layout: default
 title: about
+permalink: /pages
 ---
 
 # **我的目标**: 
