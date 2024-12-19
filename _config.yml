@@ -5,5 +5,5 @@ nav_links:
     url: "/pages/new_page"
   - title: "About"
     url: "/pages/about.md"
-    - title: "旧的作品"
+  - title: "旧的作品"
     url: "https://yihngwan.github.io/study_html/"
