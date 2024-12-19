@@ -1,5 +1,7 @@
 theme: jekyll-theme-minimal
 title: 何贤君的githubBlog
+# Navigation links for the blog
+# Each link should have a title and a URL
 nav_links:
   - title: "home"
     url: "https://yihngwan.github.io/"
@@ -22,10 +24,14 @@ plugins:
 auto_pages:
   enabled: true
   layouts:
-    - 'auto_page'
+    - 'default'
   categories:
     enabled: true
   collections:
     enabled: true
   tags:
     enabled: true
+  pages:
+    enabled: true
+    title: "Pages"
+    dir: "pages"
