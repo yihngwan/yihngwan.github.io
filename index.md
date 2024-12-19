@@ -1,1 +1,4 @@
-123456
+[about][def]
+
+
+[def]: /_posts/about.md
