@@ -39,12 +39,38 @@
         .container {
             display: flex;
             height: calc(100vh - 60px);
+            position: relative;
         }
         
         .sidebar {
             width: 200px;
             background-color: #f0f0f0;
             border-right: 1px solid #ccc;
+            transition: transform 0.3s ease;
+            transform: translateX(0);
+        }
+        
+        .sidebar.collapsed {
+            transform: translateX(-100%);
+        }
+        
+        .toggle-btn {
+            position: absolute;
+            top: 10px;
+            left: 210px;
+            background-color: #4254c5;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        
+        .container.collapsed .toggle-btn {
+            left: 10px;
+        }
+        
+        .container.collapsed .sidebar {
+            transform: translateX(-100%);
         }
         
         .sidebar a {
@@ -87,11 +113,18 @@
             <a href="#">Link 4</a>
             <a href="#">Link 5</a>
         </div>
+        <button class="toggle-btn" onclick="toggleSidebar()">收回</button>
         <h1>Loader</h1>
         <div class="content">
             <p>加载中...</p>
 
         </div>
     </div>
+    <script>
+        function toggleSidebar() {
+            const container = document.querySelector('.container');
+            container.classList.toggle('collapsed');
+        }
+    </script>
 </body>
 </html>
