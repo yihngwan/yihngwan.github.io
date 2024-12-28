@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden; /* 确保内容不会溢出 */
 }
 
 .header {
@@ -35,10 +37,7 @@ body {
     height: calc(100vh - 60px);
     position: relative;
     transition: all 0.3s ease;
-}
-
-.container.collapsed .content {
-    padding-left: 20px;
+    overflow: hidden; /* 确保内容不会溢出 */
 }
 
 .sidebar {
@@ -47,16 +46,33 @@ body {
     border-right: 1px solid #ccc;
     transition: transform 0.3s ease;
     transform: translateX(0);
+    z-index: 1;
+    height: 100%;
+}
+
+.left-sidebar {
+    position: absolute;
+    left: 0;
+}
+
+.right-sidebar {
+    position: absolute;
+    right: 0;
+    border-right: none;
+    border-left: 1px solid #ccc;
 }
 
 .sidebar.collapsed {
     transform: translateX(-100%);
 }
 
+.right-sidebar.collapsed {
+    transform: translateX(100%);
+}
+
 .toggle-btn {
     position: absolute;
     top: 10px;
-    left: 210px;
     width: 40px;
     height: 40px;
     background-color: #4254c5;
@@ -68,14 +84,23 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 14px; /* 修改字体大小 */
+    z-index: 2;
 }
 
-.container.collapsed .toggle-btn {
+.left-toggle-btn {
+    left: 210px;
+}
+
+.right-toggle-btn {
+    right: 210px;
+}
+
+.left-sidebar.collapsed + .left-toggle-btn {
     left: 10px;
 }
 
-.container.collapsed .sidebar {
-    transform: translateX(-100%);
+.right-sidebar.collapsed + .right-toggle-btn {
+    right: 10px;
 }
 
 .sidebar a {
@@ -91,6 +116,17 @@ body {
     padding: 20px;
     background-color: white;
     transition: all 0.3s ease;
+    margin-left: 200px;
+    margin-right: 200px;
+    overflow-y: auto; /* 确保内容可以滚动 */
+}
+
+.left-sidebar.collapsed ~ .content {
+    margin-left: 0;
+}
+
+.right-sidebar.collapsed ~ .content {
+    margin-right: 0;
 }
 
 .content-lines {

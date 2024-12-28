@@ -19,7 +19,7 @@ nav_links:
   - title: "新的页面"
     url: "/pages/new_page"
   - title: "test"
-    url: "test.html"
+    url: "/dome/test"
   - title: "About"
     url: "/pages/about"
   - title: "旧的作品"
