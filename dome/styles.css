@@ -133,3 +133,49 @@ body {
     color: #ccc;
     line-height: 2;
 }
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .toggle-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .left-toggle-btn {
+        left: 160px;
+    }
+
+    .right-toggle-btn {
+        right: 160px;
+    }
+
+    .left-sidebar.collapsed + .left-toggle-btn {
+        left: 10px;
+    }
+
+    .right-sidebar.collapsed + .right-toggle-btn {
+        right: 10px;
+    }
+
+    .sidebar {
+        width: 160px;
+    }
+
+    .content {
+        margin-left: 160px;
+        margin-right: 160px;
+    }
+
+    .left-sidebar.collapsed ~ .content {
+        margin-left: 0;
+    }
+
+    .right-sidebar.collapsed ~ .content {
+        margin-right: 0;
+    }
+}
