@@ -13,11 +13,14 @@ body {
     height: 40px;
     display: flex;
     align-items: center;
+    justify-content: space-between; /* 确保导航栏在页面放大时显示正常 */
 }
 
 .nav {
     display: flex;
     gap: 20px;
+    align-items: center;
+    flex-wrap: wrap; /* 使导航栏适应不同大小的屏幕 */
 }
 
 .nav a {
