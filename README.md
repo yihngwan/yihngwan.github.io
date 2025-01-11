@@ -6,4 +6,4 @@ Stop signs
 I still see your face
 In the white cars
 Front yards
-我服了这个教练
+什么时候才能摆脱爹味
