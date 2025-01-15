@@ -7,4 +7,4 @@ I still see your face
 In the white cars
 Front yards
 什么时候才能摆脱爹味
-果然，我爸这人说别人说几句就听，我的建议根本不管用
+内卷时刻吗？
